@@ -31,6 +31,7 @@ function bcfw_slider_bootstrap_carousel_function( $atts )
     $count = 0;
     ?>
 
+<div class="row bg-persian-green">
     <div id="slider-bootstrap-carousel-<?=$category?>" class="carousel slide" data-ride="carousel">
 
         <?php if($countPosts > 1) : ?>
@@ -97,6 +98,7 @@ function bcfw_slider_bootstrap_carousel_function( $atts )
         <?php endif; ?>
 
     </div><!-- #slider-bootstrap-carousel -->
+</div><!-- .row -->
     
 <?php
 }
