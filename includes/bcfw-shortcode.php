@@ -5,10 +5,11 @@
 function bcfw_slider_bootstrap_carousel_function( $atts )
 {
     extract( shortcode_atts( array( 'category' => '' ), $atts ) );
-
+    
     $args = array(
         'post_type' => 'bootstrap_carousel',
-        'orderby'   => 'date',
+        'orderby'   => 'title',
+        'order'     => 'ASC',
         'status'    => 'publish',
         'limit'     => -1
     );
